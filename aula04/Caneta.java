@@ -30,7 +30,10 @@ public class Caneta {
 
     public void setTampada(boolean tampada) {
         this.tampada = true;
+        tampada = true;
     }
-    
+    public boolean isTampada() {
+        return tampada;
+    }
     
 }
