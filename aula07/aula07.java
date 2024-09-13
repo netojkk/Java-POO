@@ -13,10 +13,11 @@ public class aula07 {
         
         
         Luta ufc = new Luta();
-        ufc.marcarLuta(lut[0], lut[4]);
+        // ufc.marcarLuta(lut[0], lut[4]);
+        // ufc.lutar();
+        
+        ufc.marcarLuta(lut[5], lut[5]);
         ufc.lutar();
-        
-        
     }
 
 }

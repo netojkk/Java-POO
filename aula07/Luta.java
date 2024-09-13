@@ -8,7 +8,6 @@ import java.util.Random;
 public class Luta {
     private Lutador desafiante;
     private Lutador desafiado;
-    // private int rounds;
     private boolean aprovada;
 
     public void marcarLuta(Lutador lut1, Lutador lut2) {
@@ -130,15 +129,19 @@ public class Luta {
 
             // Define quem ganhou segundo quem está com a maior vida
             if (rounds == 10 && vidaDesafiado > vidaDesafiante) {
+                System.out.println("====================================");
                 System.out.println("O vencedor.... é....");
                 System.out.println("O desafiado " + this.desafiado.getName() + " vence a luta!");
                 this.getDesafiado().ganharLuta();
+                this.getDesafiado().status();
                 this.getDesafiante().perderLuta();
             } else if (rounds == 10 && vidaDesafiante > vidaDesafiado) {
+                System.out.println("====================================");
                 System.out.println("O vencedor.... é....");
                 System.out.println("O desafiante " + this.desafiante.getName() + " vence a luta!");
-                this.getDesafiado().ganharLuta();
-                this.getDesafiante().perderLuta();
+                this.getDesafiante().ganharLuta();
+                this.getDesafiante().status();
+                this.getDesafiado().perderLuta();
             } else {
                 System.out.println("//EMPATE//");
                 this.getDesafiado().empatarLuta();
