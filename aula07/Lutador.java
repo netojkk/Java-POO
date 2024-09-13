@@ -29,7 +29,7 @@ public class Lutador {
 
     // Metodos Publicos
     public void apresentar() {
-        
+        System.out.println("Aprensentando o....");
         System.out.println("Lutador: " + this.getName());
         System.out.println("Nacionalidade: " + this.getNacionalidade());
         System.out.println("Idade: " + this.getIdade());

@@ -17,8 +17,6 @@ public class aula07 {
         ufc.lutar();
         
         
-        // lut[0].status();
-        // lut[4].status();
     }
 
 }
